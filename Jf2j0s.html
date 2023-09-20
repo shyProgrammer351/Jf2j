@@ -1,0 +1,42 @@
+<!DOCTYPE html> <html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script type="text/javascript" src="https://5awf1ssnauwzzo5wgvczig.on.drv.tw/Web/J/J0210.js"></script> 		<script type="text/javascript" src="../reading/functions.js"></script> 		<link rel="stylesheet" href="../reading/layout.css"> 		<script> 			var d10 = "1 2 3 4 5 7 6 5 7 6 5 7 6 5 7 8 9 10 11 12 13 14 15"; 		</script> 	</head> 	<body onload='f1();' onkeydown='f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> 			</div> 			<div id = "navigationBox"> 			</div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>배열 크기 및 두 숫자를 입력받아 사칙연산을 수행하고 예외가 발생하면 이를 처리하는 문제입니다 실행순서를 클릭하세요 </pre> 				<pre class='selectable'>1) 사과 
+2) 바나나 
+3) 딸기 
+배열 허용 범위 초과
+빈 객체 접근 오류
+</pre><br>  	 				<h4>프로그램 코드</h4> 				<pre></pre><pre id="code0" class="unselectable codeClass">	import java.util.*;
+
+</pre><pre id="code0" class="unselectable codeClass">	public class ReferenceException
+</pre><pre id="code0" class="unselectable codeClass">	{  
+</pre><pre id="code1" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('1')">1		public static void main(String args[]) 
+</pre><pre id="code0" class="unselectable codeClass">		{ 
+</pre><pre id="code2" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('2')">2			String[] word = { "apple", "banana", "carrot" };
+
+</pre><pre id="code3" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('3')">3			try 											
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code4" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('4')">4				for( int index = 0; 
+</pre><pre id="code5" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('5')">5				                   index <= word.length; 
+</pre><pre id="code6" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('6')">6				                                        index++ )
+</pre><pre id="code0" class="unselectable codeClass">				{
+</pre><pre id="code7" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('7')">7					System.out.println( ( index + 1 ) + ") " + word[ index ] + " " );
+</pre><pre id="code0" class="unselectable codeClass">				}
+</pre><pre id="code0" class="unselectable codeClass">			}	
+</pre><pre id="code8" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('8')">8		 	catch ( ArrayIndexOutOfBoundsException e )		
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code9" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('9')">9				System.out.println( "\n배열 허용 범위 초과" );
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">				
+</pre><pre id="code10" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('10')">10			try 											
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code11" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('11')">11				word = null;
+</pre><pre id="code12" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('12')">12				System.out.println( word[0] );
+</pre><pre id="code0" class="unselectable codeClass">			}	
+</pre><pre id="code13" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('13')">13			catch ( NullPointerException e ) 				
+</pre><pre id="code0" class="unselectable codeClass">			{
+</pre><pre id="code14" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('14')">14				System.out.println( "빈 객체 접근 오류" );
+</pre><pre id="code0" class="unselectable codeClass">			}
+</pre><pre id="code0" class="unselectable codeClass">			
+</pre><pre id="code15" class="unselectable codeClass" onmouseover="f8(this.id, true) " onmouseout="f8(this.id, false)" onclick="f7('15')">15			return;
+</pre><pre id="code0" class="unselectable codeClass">		} 
+</pre><pre id="code0" class="unselectable codeClass">	}
+</pre>
+</pre> 			</div> 			<div id = "floatingBox"> 				<b>실행 순서</b> 				<pre id = "d4" style='white-space:normal; word-wrap:break-word; width:150px;'></pre> 			</div> 		</div> 	</body> </html>   
